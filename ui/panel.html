@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Being's Discworld Kill Counter</title>
+    <link rel="stylesheet" href="panel.css">
+</head>
+<body>
+    <div class="panel">
+        <section class="section" id="summary-section">
+            <div class="section-header">Summary</div>
+            <div class="summary-row">
+                <span class="summary-label">Status:</span>
+                <span class="summary-value" id="group-status">Not in group</span>
+            </div>
+            <div class="button-row">
+                <button class="btn" id="btn-group">In Group</button>
+            </div>
+            <div class="summary-row">
+                <span class="summary-label">Total:</span>
+                <span class="summary-value" id="total-kills">0</span>
+                <span class="summary-rate" id="group-kph">0k/h</span>
+            </div>
+            <div class="summary-row summary-sub">
+                <span class="summary-time" id="session-time">0m</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-header">Players</div>
+            <div id="player-list" class="player-list"></div>
+        </section>
+
+        <div class="button-row bottom-buttons">
+            <button class="btn" id="btn-publish">Publish</button>
+            <button class="btn" id="btn-reset">Reset</button>
+            <button class="btn" id="btn-save">Save</button>
+        </div>
+    </div>
+    <script src="panel.js"></script>
+</body>
+</html>
